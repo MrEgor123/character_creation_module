@@ -4,13 +4,13 @@ from random import randint
 def attack(char_name, char_class):
     damage = 5 + randint(-3, -1)
     if char_class == 'warrior':
-        return f'{char_name} нанёс урон противнику равный {damage}'
+        return f'{char_name} нанес урон противнику равный {damage}'
     elif char_class == 'mage':
-        return f'{char_name} нанёс урон противнику равный {damage}'
+        return f'{char_name} нанес урон противнику равный {damage}'
     elif char_class == 'healer':
-        return f'{char_name} нанёс урон противнику равный {damage}'
+        return f'{char_name} нанес урон противнику равный {damage}'
     else:
-        return f'{char_name} нанёс урон противнику равный {damage}'
+        return f'{char_name} нанес урон противнику равный {damage}'
 
 
 def special(char_name, char_class):
