@@ -2,6 +2,7 @@ from random import randint
 
 
 def attack(char_name: str, char_class: str) -> str:
+    """Высчитывание силы атаки."""
     damage = 5 + randint(-3, -1)
     if char_class == 'warrior':
         return f'{char_name} нанёс урон противнику равный {damage}'
@@ -14,6 +15,7 @@ def attack(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
+    """Применение специальных умений."""
     endurance = 80 + 25
     attack_power = 5 + 40
     protection = 10 + 30
@@ -29,10 +31,12 @@ def special(char_name: str, char_class: str) -> str:
 
 
 def defence(char_name: str, char_class: str) -> str:
+    """Использование защиты."""
     return f'{char_name} использовал защиту и заблокировал атаку.'
 
 
 def start_training(char_name: str, char_class: str) -> str:
+    """Обучение."""
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
@@ -56,6 +60,7 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class() -> str:
+    """Выбор воина."""
     approve_choice: str = ''
     char_class: str = ''
     while approve_choice != 'y':
